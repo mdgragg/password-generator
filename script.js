@@ -40,7 +40,7 @@ function generatePassword() {
 
     // if ok to all prompts
     else if (confirmUppercase && confirmLowercase && confirmNumbers && confirmCharacters) {
-       choices = uppercase.concat(lowercase, numbers, specialCharacter);
+       choices = uppercase.concat(lowercase, numbers, specialCharacters);
     }
 
 

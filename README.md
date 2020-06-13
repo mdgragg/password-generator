@@ -1,6 +1,8 @@
 # password-generator
 
-https://mdgragg.github.io/password-generator/
+[Password Generator](https://mdgragg.github.io/password-generator/) 
+
+![Screen Shot of Page](https://raw.githubusercontent.com/mdgragg/password-generator/master/Screen-Shot.png)
 
 Including promts to find out how long/what the user wants to included in their password. 
 HTML and CSS provided.

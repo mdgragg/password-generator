@@ -6,8 +6,7 @@ var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", 
 // code given
 var generateBtn = document.querySelector("#generate");
 
-// From Haymanot
- document.querySelector("#generate").addEventListener("click" , writePassword);
+document.querySelector("#generate").addEventListener("click" , writePassword);
 
 // code given
 function writePassword() {
@@ -92,8 +91,6 @@ function generatePassword() {
     } 
 
 
-    
-
 
     // if ok to only 1 prompt
   // ok to just uppercase
@@ -113,24 +110,20 @@ function generatePassword() {
         choices = specialCharacters;
     }
   
+  var password = [];
 
-    // password variable is an array placeholder for user generated amount of length
-    var password = [];
-
-    // Random selection for all variables: 
     for (var i = 0; i < enter; i++) {
         var pickChoices = choices[Math.floor(Math.random() * choices.length)];
         password.push(pickChoices);
     }
 
 
-    // This joins the password array and converts it to a string
-    var password = password.join("");
+  var password = password.join("");
     UserInput(password);
-    return password;
+     return password;
 }
 
-function UserInput(password) {
+  function UserInput(password) {
    document.querySelector("#password").textContent = password;
 
 } 
